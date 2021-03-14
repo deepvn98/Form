@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><br><br>
+số 1
+<input type="number" id="so1" value="nhập số"><br><br>
+số 2
+<input type="number" id="so2" value="nhập số">
+<input type="button" onclick="clickme()" value="click"><br><br>
+<p id="ketqua"></p>
+</body>
+</html>
+<script>
+    function clickme() {
+        let number1 = parseInt(document.getElementById("so1").value);
+        let number2 = parseInt(document.getElementById("so2").value);
+        let result = number1+ number2;
+        document.getElementById("ketqua").innerHTML = "kết quả " + result;
+    }
+</script>
